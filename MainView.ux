@@ -1,2 +1,20 @@
-<App>
+<App Background="#90CAF9">
+	<ClientPanel>
+		<!-- Huutis component -->
+		<Panel ux:Class="Huutis" TextColor="Black">
+			<string ux:Property="Level" />
+			<float4 ux:Property="Color" />
+			<float4 ux:Property="TextColor" />
+			<Text Alignment="Center" FontSize="40" Color="{Property TextColor}" Value="{Property Level}" />
+		</Panel>
+
+		<Grid RowCount="6" Margin="10" Background="#f00">
+			<Huutis Level="Galactic Shoutings" Color="Black" TextColor="White" />
+			<Huutis Level="Apex Kek" Color="#F57C00" TextColor="White" />
+			<Huutis Level="Top Lel" Color="#FFEB3B" />
+			<Huutis Level="Elevated Lol" Color="#26C6DA" />
+			<Huutis Level="Low Bur" Color="#BA68C8" />
+			<Huutis Level="Regular Nay" Color="#283593" TextColor="White" />
+		</Grid>
+	</ClientPanel>
 </App>
